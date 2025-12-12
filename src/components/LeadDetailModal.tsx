@@ -373,7 +373,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-accent-red rounded-xl flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#10b981] rounded-xl flex items-center justify-center">
               <User className="h-5 w-5 text-white" />
             </div>
             <div>
@@ -399,7 +399,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-3 text-sm font-medium capitalize transition-colors ${
                 activeTab === tab
-                  ? 'text-accent-red border-b-2 border-accent-red'
+                  ? 'text-[#10b981] border-b-2 border-[#10b981]'
                   : 'text-muted hover:text-text'
               }`}
             >
@@ -417,7 +417,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* Contact Information */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <Mail className="h-5 w-5 text-accent-red" />
+                    <Mail className="h-5 w-5 text-[#10b981]" />
                     Contact Information
                   </h3>
                   <div className="space-y-3">
@@ -431,7 +431,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* Company Information */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <Building className="h-5 w-5 text-accent-red" />
+                    <Building className="h-5 w-5 text-[#10b981]" />
                     Company Information
                   </h3>
                   <div className="space-y-3">
@@ -445,7 +445,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* Quick Links */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <Globe className="h-5 w-5 text-accent-red" />
+                    <Globe className="h-5 w-5 text-[#10b981]" />
                     Quick Links
                   </h3>
                   <div className="space-y-3">
@@ -491,13 +491,13 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* Campaign Progress */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-accent-red" />
+                    <CheckCircle2 className="h-5 w-5 text-[#10b981]" />
                     Campaign Progress
                   </h3>
                   <div className="space-y-4">
                     <div className="flex items-center justify-between">
                       <span className="text-muted">Current Stage:</span>
-                      <span className="text-accent-red font-medium">{getCurrentStage()}</span>
+                      <span className="text-[#10b981] font-medium">{getCurrentStage()}</span>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-muted">Next Action:</span>
@@ -509,7 +509,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* Connection Status */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <User className="h-5 w-5 text-accent-red" />
+                    <User className="h-5 w-5 text-[#10b981]" />
                     Connection Status
                   </h3>
                   <div className="space-y-4">
@@ -519,7 +519,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                         onClick={() => handleToggleUpdate('connection_request_sent', !connectionRequestSent)}
                         disabled={loading}
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                          connectionRequestSent ? 'bg-accent-red' : 'bg-gray-600'
+                          connectionRequestSent ? 'bg-[#10b981]' : 'bg-gray-600'
                         } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
                         <span
@@ -536,7 +536,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                         onClick={() => handleToggleUpdate('connection_accepted_status', !connectionAccepted)}
                         disabled={loading}
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                          connectionAccepted ? 'bg-accent-red' : 'bg-gray-600'
+                          connectionAccepted ? 'bg-[#10b981]' : 'bg-gray-600'
                         } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
                         <span
@@ -552,7 +552,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* DM Status */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <MessageSquare className="h-5 w-5 text-accent-red" />
+                    <MessageSquare className="h-5 w-5 text-[#10b981]" />
                     DM Status
                   </h3>
                   <div className="space-y-4">
@@ -562,7 +562,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                         onClick={() => handleToggleUpdate('dm_1sent', !dm1Sent)}
                         disabled={loading || !connectionAccepted}
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                          dm1Sent ? 'bg-accent-red' : 'bg-gray-600'
+                          dm1Sent ? 'bg-[#10b981]' : 'bg-gray-600'
                         } ${(loading || !connectionAccepted) ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
                         <span
@@ -579,7 +579,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                         onClick={() => handleToggleUpdate('dm_2sent', !dm2Sent)}
                         disabled={loading || !dm1Sent}
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                          dm2Sent ? 'bg-accent-red' : 'bg-gray-600'
+                          dm2Sent ? 'bg-[#10b981]' : 'bg-gray-600'
                         } ${(loading || !dm1Sent) ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
                         <span
@@ -596,7 +596,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                         onClick={() => handleToggleUpdate('dm_3sent', !dm3Sent)}
                         disabled={loading || !dm2Sent}
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                          dm3Sent ? 'bg-accent-red' : 'bg-gray-600'
+                          dm3Sent ? 'bg-[#10b981]' : 'bg-gray-600'
                         } ${(loading || !dm2Sent) ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
                         <span
@@ -612,7 +612,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                 {/* Meeting Status */}
                 <div className="glass-panel rounded-2xl p-6">
                   <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                    <Calendar className="h-5 w-5 text-accent-red" />
+                    <Calendar className="h-5 w-5 text-[#10b981]" />
                     Meeting Status
                   </h3>
                   <div className="space-y-4">
@@ -622,7 +622,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                         onClick={() => handleToggleUpdate('booked_meeting', !bookedMeeting)}
                         disabled={loading}
                         className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                          bookedMeeting ? 'bg-accent-red' : 'bg-gray-600'
+                          bookedMeeting ? 'bg-[#10b981]' : 'bg-gray-600'
                         } ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                       >
                         <span
@@ -642,7 +642,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
             <div className="space-y-6">
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-heading font-semibold text-text flex items-center gap-2">
-                  <MessageSquare className="h-5 w-5 text-accent-red" />
+                  <MessageSquare className="h-5 w-5 text-[#10b981]" />
                   Messages
                 </h3>
               </div>
@@ -684,7 +684,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                           <textarea
                             value={editedContent}
                             onChange={(e) => setEditedContent(e.target.value)}
-                            className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-accent-red min-h-[150px]"
+                            className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-[#10b981] min-h-[150px]"
                             rows={8}
                           />
                           <div className="flex items-center gap-3">
@@ -736,7 +736,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                       value={messageStatuses.dm_1}
                       onChange={(e) => handleStatusChange('dm_1', e.target.value)}
                       disabled={loading}
-                      className="px-3 py-2 bg-base border border-white/10 rounded-lg text-text text-sm focus:outline-none focus:border-accent-red disabled:opacity-50"
+                      className="px-3 py-2 bg-base border border-white/10 rounded-lg text-text text-sm focus:outline-none focus:border-[#10b981] disabled:opacity-50"
                     >
                       <option value="not_sent">Not Sent</option>
                       <option value="sent">Sent</option>
@@ -780,7 +780,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                                 <textarea
                                   value={editedContent}
                                   onChange={(e) => setEditedContent(e.target.value)}
-                                  className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-accent-red min-h-[200px]"
+                                  className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-[#10b981] min-h-[200px]"
                                   rows={10}
                                 />
                                 <div className="flex items-center gap-3">
@@ -835,7 +835,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                       value={messageStatuses.dm_2}
                       onChange={(e) => handleStatusChange('dm_2', e.target.value)}
                       disabled={loading}
-                      className="px-3 py-2 bg-base border border-white/10 rounded-lg text-text text-sm focus:outline-none focus:border-accent-red disabled:opacity-50"
+                      className="px-3 py-2 bg-base border border-white/10 rounded-lg text-text text-sm focus:outline-none focus:border-[#10b981] disabled:opacity-50"
                     >
                       <option value="not_sent">Not Sent</option>
                       <option value="sent">Sent</option>
@@ -879,7 +879,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                                 <textarea
                                   value={editedContent}
                                   onChange={(e) => setEditedContent(e.target.value)}
-                                  className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-accent-red min-h-[200px]"
+                                  className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-[#10b981] min-h-[200px]"
                                   rows={10}
                                 />
                                 <div className="flex items-center gap-3">
@@ -934,7 +934,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                       value={messageStatuses.dm_3}
                       onChange={(e) => handleStatusChange('dm_3', e.target.value)}
                       disabled={loading}
-                      className="px-3 py-2 bg-base border border-white/10 rounded-lg text-text text-sm focus:outline-none focus:border-accent-red disabled:opacity-50"
+                      className="px-3 py-2 bg-base border border-white/10 rounded-lg text-text text-sm focus:outline-none focus:border-[#10b981] disabled:opacity-50"
                     >
                       <option value="not_sent">Not Sent</option>
                       <option value="sent">Sent</option>
@@ -978,7 +978,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
                                 <textarea
                                   value={editedContent}
                                   onChange={(e) => setEditedContent(e.target.value)}
-                                  className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-accent-red min-h-[200px]"
+                                  className="w-full p-4 bg-elevated border border-white/10 rounded-lg text-text resize-vertical focus:outline-none focus:border-[#10b981] min-h-[200px]"
                                   rows={10}
                                 />
                                 <div className="flex items-center gap-3">
@@ -1032,7 +1032,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
           {activeTab === 'timeline' && (
             <div className="space-y-6">
               <h3 className="text-lg font-heading font-semibold text-text mb-4 flex items-center gap-2">
-                <Clock className="h-5 w-5 text-accent-red" />
+                <Clock className="h-5 w-5 text-[#10b981]" />
                 Timeline
               </h3>
               

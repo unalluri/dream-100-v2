@@ -344,7 +344,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-accent-red rounded-xl flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#10b981] rounded-xl flex items-center justify-center">
               <User className="h-5 w-5 text-white" />
             </div>
             <h2 className="text-xl font-semibold text-text">Add New Lead</h2>
@@ -364,7 +364,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
               onClick={() => setImportMode('single')}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                 importMode === 'single'
-                  ? 'bg-accent-red text-white shadow-lg shadow-accent-red/25'
+                  ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/25'
                   : 'bg-elevated text-muted hover:text-text hover:bg-white/5'
               }`}
             >
@@ -374,7 +374,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
               onClick={() => setImportMode('csv')}
               className={`px-4 py-2 rounded-xl text-sm font-medium transition-all ${
                 importMode === 'csv'
-                  ? 'bg-accent-red text-white shadow-lg shadow-accent-red/25'
+                  ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/25'
                   : 'bg-elevated text-muted hover:text-text hover:bg-white/5'
               }`}
             >
@@ -390,7 +390,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
               {/* Lead Information */}
               <div className="bg-elevated rounded-2xl p-6 border border-white/5">
                 <h3 className="text-lg font-semibold text-text mb-4 flex items-center gap-2">
-                  <User className="h-5 w-5 text-accent-red" />
+                  <User className="h-5 w-5 text-[#10b981]" />
                   Lead Information
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -400,11 +400,11 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                     </label>
                     <input
                       {...register('lead_name')}
-                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-accent-red/50 focus:shadow-lg focus:shadow-accent-red/10 transition-all"
+                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-[#10b981]/50 focus:shadow-lg focus:shadow-[#10b981]/10 transition-all"
                       placeholder="John Smith"
                     />
                     {errors.lead_name && (
-                      <p className="text-accent-red text-sm mt-1">{errors.lead_name.message}</p>
+                      <p className="text-[#10b981] text-sm mt-1">{errors.lead_name.message}</p>
                     )}
                   </div>
                   <div>
@@ -413,7 +413,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                     </label>
                     <input
                       {...register('job_title')}
-                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-accent-red/50 focus:shadow-lg focus:shadow-accent-red/10 transition-all"
+                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-[#10b981]/50 focus:shadow-lg focus:shadow-[#10b981]/10 transition-all"
                       placeholder="CEO, CTO, VP of Engineering"
                     />
                   </div>
@@ -423,7 +423,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
               {/* Contact Information */}
               <div className="bg-elevated rounded-2xl p-6 border border-white/5">
                 <h3 className="text-lg font-semibold text-text mb-4 flex items-center gap-2">
-                  <Mail className="h-5 w-5 text-accent-red" />
+                  <Mail className="h-5 w-5 text-[#10b981]" />
                   Contact Information
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -434,11 +434,11 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                     <input
                       {...register('lead_email')}
                       type="email"
-                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-accent-red/50 focus:shadow-lg focus:shadow-accent-red/10 transition-all"
+                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-[#10b981]/50 focus:shadow-lg focus:shadow-[#10b981]/10 transition-all"
                       placeholder="john@techcorp.com"
                     />
                     {errors.lead_email && (
-                      <p className="text-accent-red text-sm mt-1">{errors.lead_email.message}</p>
+                      <p className="text-[#10b981] text-sm mt-1">{errors.lead_email.message}</p>
                     )}
                   </div>
                   <div>
@@ -448,7 +448,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                     <input
                       {...register('lead_phone_number')}
                       type="tel"
-                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-accent-red/50 focus:shadow-lg focus:shadow-accent-red/10 transition-all"
+                      className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-[#10b981]/50 focus:shadow-lg focus:shadow-[#10b981]/10 transition-all"
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
@@ -458,7 +458,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
               {/* URLs */}
               <div className="bg-elevated rounded-2xl p-6 border border-white/5">
                 <h3 className="text-lg font-semibold text-text mb-4 flex items-center gap-2">
-                  <Globe className="h-5 w-5 text-accent-red" />
+                  <Globe className="h-5 w-5 text-[#10b981]" />
                   LinkedIn Profile
                 </h3>
                 <div>
@@ -468,11 +468,11 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                   <input
                     {...register('lead_linkedin_url')}
                     type="url"
-                    className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-accent-red/50 focus:shadow-lg focus:shadow-accent-red/10 transition-all"
+                    className="w-full px-4 py-3 bg-base border border-white/10 rounded-xl text-text placeholder-muted focus:outline-none focus:border-[#10b981]/50 focus:shadow-lg focus:shadow-[#10b981]/10 transition-all"
                     placeholder="https://linkedin.com/in/johnsmith"
                   />
                   {errors.lead_linkedin_url && (
-                    <p className="text-accent-red text-sm mt-1">{errors.lead_linkedin_url.message}</p>
+                    <p className="text-[#10b981] text-sm mt-1">{errors.lead_linkedin_url.message}</p>
                   )}
                 </div>
               </div>
@@ -489,7 +489,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                 <button
                   type="submit"
                   disabled={loading}
-                  className="px-6 py-3 bg-accent-red hover:bg-accent-red-hover text-white rounded-xl transition-all hover:shadow-lg hover:shadow-accent-red/25 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-6 py-3 bg-[#10b981] hover:bg-[#10b981]-hover text-white rounded-xl transition-all hover:shadow-lg hover:shadow-[#10b981]/25 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? 'Submitting Lead...' : 'Add Lead'}
                 </button>
@@ -500,10 +500,10 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
               {/* CSV Upload */}
               <div className="bg-elevated rounded-2xl p-6 border border-white/5">
                 <h3 className="text-lg font-semibold text-text mb-4 flex items-center gap-2">
-                  <Upload className="h-5 w-5 text-accent-red" />
+                  <Upload className="h-5 w-5 text-[#10b981]" />
                   Upload CSV File
                 </h3>
-                <div className="border-2 border-dashed border-white/20 rounded-2xl p-8 text-center hover:border-accent-red/50 transition-colors">
+                <div className="border-2 border-dashed border-white/20 rounded-2xl p-8 text-center hover:border-[#10b981]/50 transition-colors">
                   <input
                     type="file"
                     accept=".csv,.xlsx,.xls"
@@ -531,8 +531,8 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                     <div>
                       <p className="font-medium text-text mb-1">Required Columns:</p>
                       <ul className="space-y-1">
-                        <li>• <code className="text-accent-red">name</code>, <code className="text-accent-red">lead_name</code>, <code className="text-accent-red">full_name</code>, or <code className="text-accent-red">fullname</code></li>
-                        <li>• <code className="text-accent-red">linkedin</code>, <code className="text-accent-red">linkedin_url</code>, <code className="text-accent-red">lead_linkedin_url</code>, or <code className="text-accent-red">linkedin_profile</code></li>
+                        <li>• <code className="text-[#10b981]">name</code>, <code className="text-[#10b981]">lead_name</code>, <code className="text-[#10b981]">full_name</code>, or <code className="text-[#10b981]">fullname</code></li>
+                        <li>• <code className="text-[#10b981]">linkedin</code>, <code className="text-[#10b981]">linkedin_url</code>, <code className="text-[#10b981]">lead_linkedin_url</code>, or <code className="text-[#10b981]">linkedin_profile</code></li>
                       </ul>
                     </div>
                     <div>
@@ -552,8 +552,8 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                       </ul>
                     </div>
                   </div>
-                  <div className="mt-4 p-3 bg-accent-red/10 border border-accent-red/20 rounded-lg">
-                    <p className="text-accent-red text-xs font-medium">
+                  <div className="mt-4 p-3 bg-[#10b981]/10 border border-[#10b981]/20 rounded-lg">
+                    <p className="text-[#10b981] text-xs font-medium">
                       📋 Only <strong>Name</strong> and <strong>LinkedIn URL</strong> are required. Supports CSV and Excel files. LinkedIn URLs must start with https://linkedin.com/ or https://www.linkedin.com/
                     </p>
                   </div>
@@ -572,7 +572,7 @@ const AddLeadModal: React.FC<AddLeadModalProps> = ({ isOpen, onClose, onLeadAdde
                 <button
                   onClick={processCsvFile}
                   disabled={!csvFile || loading}
-                  className="px-6 py-3 bg-accent-red hover:bg-accent-red-hover text-white rounded-xl transition-all hover:shadow-lg hover:shadow-accent-red/25 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-6 py-3 bg-[#10b981] hover:bg-[#10b981]-hover text-white rounded-xl transition-all hover:shadow-lg hover:shadow-[#10b981]/25 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {loading ? 'Submitting...' : 'Import CSV'}
                 </button>

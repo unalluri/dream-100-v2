@@ -78,8 +78,8 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
   if (error) {
     return (
       <div className="flex-1 bg-base p-6">
-        <div className="glass-panel rounded-2xl p-6 text-center border border-accent-red/20">
-          <h3 className="text-lg font-heading font-semibold text-accent-red mb-2">Error Loading Leads</h3>
+        <div className="glass-panel rounded-2xl p-6 text-center border border-[#10b981]/20">
+          <h3 className="text-lg font-heading font-semibold text-[#10b981] mb-2">Error Loading Leads</h3>
           <p className="text-muted">{error}</p>
         </div>
       </div>
@@ -93,7 +93,7 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
         <h1 className="text-2xl font-semibold text-white">All Leads</h1>
         <button
           onClick={onOpenAddModal}
-          className="flex items-center gap-2 px-4 py-2 bg-[#14b8a6] hover:bg-[#0d9488] text-white rounded-lg transition-all duration-150 ease-out font-medium text-sm"
+          className="flex items-center gap-2 px-4 py-2 bg-[#10b981] hover:bg-[#0d9488] text-white rounded-lg transition-all duration-150 ease-out font-medium text-sm"
         >
           <Plus className="h-4 w-4" />
           Add Lead
@@ -109,7 +109,7 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
             placeholder="Search leads and companies..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 bg-[#1e293b] border border-[#334155] rounded-lg text-white placeholder-[#9CA3AF] focus:outline-none focus:border-[#14b8a6] transition-all duration-150 ease-out"
+            className="w-full pl-12 pr-4 py-3 bg-[#1e293b] border border-[#334155] rounded-lg text-white placeholder-[#9CA3AF] focus:outline-none focus:border-[#10b981] transition-all duration-150 ease-out"
           />
         </div>
       </div>

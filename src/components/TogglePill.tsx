@@ -28,7 +28,7 @@ const TogglePill: React.FC<TogglePillProps> = ({
         inline-flex items-center rounded-full font-medium transition-all duration-200 ease-out
         ${sizeClasses[size]}
         ${isOn 
-          ? 'bg-accent-red text-white shadow-lg shadow-accent-red/25 hover:shadow-accent-red/40' 
+          ? 'bg-[#10b981] text-white shadow-lg shadow-[#10b981]/25 hover:shadow-[#10b981]/40' 
           : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
         }
         ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-105'}

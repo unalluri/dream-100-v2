@@ -42,10 +42,10 @@ const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
         className={`
           relative inline-flex flex-shrink-0 border-2 border-transparent rounded-full 
           cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none 
-          focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-900
+          focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-900
           ${classes.switch}
           ${checked 
-            ? 'bg-gradient-to-r from-red-500 to-red-600 shadow-lg shadow-red-500/25' 
+            ? 'bg-gradient-to-r from-emerald-500 to-emerald-600 shadow-lg shadow-emerald-500/25' 
             : 'bg-gray-700 hover:bg-gray-600'
           }
           ${disabled ? 'opacity-50 cursor-not-allowed' : ''}

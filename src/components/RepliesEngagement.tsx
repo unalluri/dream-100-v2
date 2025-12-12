@@ -49,9 +49,9 @@ const RepliesEngagement: React.FC = () => {
   if (error) {
     return (
       <div className="flex-1 bg-[#0f172a] p-6">
-        <div className="bg-[#1e293b] border border-[#14b8a6]/20 rounded-2xl p-6 text-center">
-          <AlertCircle className="h-12 w-12 text-[#14b8a6] mx-auto mb-4" />
-          <h3 className="text-lg font-semibold text-[#14b8a6] mb-2">Error Loading Engagement Data</h3>
+        <div className="bg-[#1e293b] border border-[#10b981]/20 rounded-2xl p-6 text-center">
+          <AlertCircle className="h-12 w-12 text-[#10b981] mx-auto mb-4" />
+          <h3 className="text-lg font-semibold text-[#10b981] mb-2">Error Loading Engagement Data</h3>
           <p className="text-[#9ca3af]">{error}</p>
         </div>
       </div>
@@ -70,8 +70,8 @@ const RepliesEngagement: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
-                <MessageSquare className="h-6 w-6 text-[#14b8a6]" />
+              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
+                <MessageSquare className="h-6 w-6 text-[#10b981]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">{engagedLeads.length}</p>
@@ -82,8 +82,8 @@ const RepliesEngagement: React.FC = () => {
 
           <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
-                <AlertCircle className="h-6 w-6 text-[#14b8a6]" />
+              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
+                <AlertCircle className="h-6 w-6 text-[#10b981]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">{highPriorityLeads.length}</p>
@@ -94,8 +94,8 @@ const RepliesEngagement: React.FC = () => {
 
           <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
-                <CheckCircle2 className="h-6 w-6 text-[#14b8a6]" />
+              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
+                <CheckCircle2 className="h-6 w-6 text-[#10b981]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">
@@ -108,8 +108,8 @@ const RepliesEngagement: React.FC = () => {
 
           <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
-                <TrendingUp className="h-6 w-6 text-[#14b8a6]" />
+              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
+                <TrendingUp className="h-6 w-6 text-[#10b981]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">
@@ -148,7 +148,7 @@ const RepliesEngagement: React.FC = () => {
                             <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                               lead.booked_meeting
                                 ? 'bg-[#10b981]'
-                                : 'bg-[#14b8a6]'
+                                : 'bg-[#10b981]'
                             }`}>
                               <User className="h-4 w-4 text-white" />
                             </div>
