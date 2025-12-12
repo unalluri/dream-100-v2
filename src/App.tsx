@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0f0f0f]">
+    <div className="min-h-screen bg-[#0f172a]">
       {/* Sidebar */}
       <Sidebar
         activeSection={activeSection}
@@ -48,7 +48,7 @@ function App() {
         position="top-right"
         toastOptions={{
           duration: 3000,
-          style: { background: '#1a1a1a', color: '#e5e7eb', border: '1px solid rgba(255,255,255,0.1)' },
+          style: { background: '#1e293b', color: '#e5e7eb', border: '1px solid rgba(255,255,255,0.1)' },
         }}
       />
 

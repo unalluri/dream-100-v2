@@ -36,10 +36,10 @@ const RepliesEngagement: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="flex-1 bg-[#0B0B0F] p-6">
+      <div className="flex-1 bg-[#0f172a] p-6">
         <div className="animate-pulse space-y-4">
           {[...Array(3)].map((_, i) => (
-            <div key={i} className="h-24 bg-[#1a1a1a] rounded-lg"></div>
+            <div key={i} className="h-24 bg-[#1e293b] rounded-lg"></div>
           ))}
         </div>
       </div>
@@ -48,8 +48,8 @@ const RepliesEngagement: React.FC = () => {
 
   if (error) {
     return (
-      <div className="flex-1 bg-[#0B0B0F] p-6">
-        <div className="bg-[#1a1a1a] border border-[#dc2626]/20 rounded-2xl p-6 text-center">
+      <div className="flex-1 bg-[#0f172a] p-6">
+        <div className="bg-[#1e293b] border border-[#dc2626]/20 rounded-2xl p-6 text-center">
           <AlertCircle className="h-12 w-12 text-[#dc2626] mx-auto mb-4" />
           <h3 className="text-lg font-semibold text-[#dc2626] mb-2">Error Loading Engagement Data</h3>
           <p className="text-[#9ca3af]">{error}</p>
@@ -59,19 +59,19 @@ const RepliesEngagement: React.FC = () => {
   }
 
   return (
-    <div className="flex-1 bg-[#0B0B0F]">
+    <div className="flex-1 bg-[#0f172a]">
       {/* Header */}
-      <div className="p-6 border-b border-[#2a2a2a]">
+      <div className="p-6 border-b border-[#334155]">
         <h1 className="text-2xl font-semibold text-white">Replies</h1>
       </div>
 
       <div className="p-6">
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-6 hover:bg-[#1f1f1f] transition-all duration-150 ease-out">
+          <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#E11D48]/10 rounded-2xl">
-                <MessageSquare className="h-6 w-6 text-[#E11D48]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <MessageSquare className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">{engagedLeads.length}</p>
@@ -80,10 +80,10 @@ const RepliesEngagement: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-6 hover:bg-[#1f1f1f] transition-all duration-150 ease-out">
+          <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#E11D48]/10 rounded-2xl">
-                <AlertCircle className="h-6 w-6 text-[#E11D48]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <AlertCircle className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">{highPriorityLeads.length}</p>
@@ -92,10 +92,10 @@ const RepliesEngagement: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-6 hover:bg-[#1f1f1f] transition-all duration-150 ease-out">
+          <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#E11D48]/10 rounded-2xl">
-                <CheckCircle2 className="h-6 w-6 text-[#E11D48]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <CheckCircle2 className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">
@@ -106,10 +106,10 @@ const RepliesEngagement: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl p-6 hover:bg-[#1f1f1f] transition-all duration-150 ease-out">
+          <div className="bg-[#1e293b] border border-[#334155] rounded-2xl p-6 hover:bg-[#334155] transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#E11D48]/10 rounded-2xl">
-                <TrendingUp className="h-6 w-6 text-[#E11D48]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <TrendingUp className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-white mb-1">
@@ -127,10 +127,10 @@ const RepliesEngagement: React.FC = () => {
         {/* All Engaged Leads */}
         <div className="space-y-4">
           {engagedLeads.length > 0 ? (
-            <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-2xl overflow-hidden">
+            <div className="bg-[#1e293b] border border-[#334155] rounded-2xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-[#0B0B0F] border-b border-[#2a2a2a]">
+                  <thead className="bg-[#0f172a] border-b border-[#334155]">
                     <tr>
                       <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Lead</th>
                       <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Company</th>
@@ -140,15 +140,15 @@ const RepliesEngagement: React.FC = () => {
                       <th className="text-center p-4 text-[#9CA3AF] font-medium text-sm">Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#2a2a2a]">
+                  <tbody className="divide-y divide-[#334155]">
                     {engagedLeads.map((lead) => (
-                      <tr key={lead.process_id} className="hover:bg-[#0B0B0F] transition-all duration-150 ease-out">
+                      <tr key={lead.process_id} className="hover:bg-[#0f172a] transition-all duration-150 ease-out">
                         <td className="p-4">
                           <div className="flex items-center gap-3">
                             <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                              lead.booked_meeting 
+                              lead.booked_meeting
                                 ? 'bg-[#10b981]'
-                                : 'bg-[#E11D48]'
+                                : 'bg-[#14b8a6]'
                             }`}>
                               <User className="h-4 w-4 text-white" />
                             </div>

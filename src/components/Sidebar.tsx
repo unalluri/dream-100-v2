@@ -31,11 +31,11 @@ const Sidebar: React.FC<SidebarProps> = ({
   onOpenAddModal
 }) => {
   return (
-    <div className="fixed left-0 top-0 w-64 bg-[#0F0F14] border-r border-[#2a2a2a] h-screen flex flex-col z-10">
+    <div className="fixed left-0 top-0 w-64 bg-[#1e293b] border-r border-[#334155] h-screen flex flex-col z-10">
       {/* Header */}
-      <div className="p-6 border-b border-[#2a2a2a]">
+      <div className="p-6 border-b border-[#334155]">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-gradient-to-br from-[#E11D48] to-[#BE185D] rounded-xl flex items-center justify-center shadow-lg shadow-[#E11D48]/25 relative overflow-hidden">
+          <div className="w-8 h-8 bg-gradient-to-br from-[#14b8a6] to-[#0d9488] rounded-xl flex items-center justify-center shadow-lg shadow-[#14b8a6]/25 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-xl animate-pulse"></div>
             <svg
               viewBox="0 0 24 24"
@@ -66,9 +66,9 @@ const Sidebar: React.FC<SidebarProps> = ({
                 <button
                   onClick={() => setActiveSection(item.id)}
                   className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg transition-all duration-150 ease-out group ${
-                    isActive 
-                      ? 'bg-[#E11D48] text-white' 
-                      : 'text-[#9CA3AF] hover:bg-[#1a1a1a] hover:text-white'
+                    isActive
+                      ? 'bg-[#14b8a6] text-white'
+                      : 'text-[#9CA3AF] hover:bg-[#334155] hover:text-white'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -78,9 +78,9 @@ const Sidebar: React.FC<SidebarProps> = ({
                   
                   {item.count && (
                     <span className={`px-2 py-0.5 text-xs rounded-full font-medium transition-all duration-150 ${
-                      isActive 
-                        ? 'bg-white/20 text-white' 
-                        : 'bg-[#E11D48] text-white'
+                      isActive
+                        ? 'bg-white/20 text-white'
+                        : 'bg-[#14b8a6] text-white'
                     }`}>
                       {item.count}
                     </span>
@@ -93,10 +93,10 @@ const Sidebar: React.FC<SidebarProps> = ({
       </nav>
 
       {/* Add Lead Button */}
-      <div className="p-4 border-t border-[#2a2a2a]">
+      <div className="p-4 border-t border-[#334155]">
         <button
           onClick={onOpenAddModal}
-          className="w-full bg-[#E11D48] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-lg transition-all duration-150 ease-out flex items-center justify-center gap-2 text-sm font-medium"
+          className="w-full bg-[#14b8a6] hover:bg-[#0d9488] text-white px-4 py-2.5 rounded-lg transition-all duration-150 ease-out flex items-center justify-center gap-2 text-sm font-medium"
         >
           <span className="text-lg">+</span>
           Add Lead
