@@ -31,9 +31,9 @@ const Sidebar: React.FC<SidebarProps> = ({
   onOpenAddModal
 }) => {
   return (
-    <div className="fixed left-0 top-0 w-64 bg-[#1e293b] border-r border-[#334155] h-screen flex flex-col z-10">
+    <div className="fixed left-0 top-0 w-64 bg-[#002447] border-r border-[#003366] h-screen flex flex-col z-10">
       {/* Header */}
-      <div className="p-6 border-b border-[#334155]">
+      <div className="p-6 border-b border-[#003366]">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 bg-gradient-to-br from-[#14b8a6] to-[#0d9488] rounded-xl flex items-center justify-center shadow-lg shadow-[#14b8a6]/25 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-xl animate-pulse"></div>
@@ -68,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg transition-all duration-150 ease-out group ${
                     isActive
                       ? 'bg-[#14b8a6] text-white'
-                      : 'text-[#9CA3AF] hover:bg-[#334155] hover:text-white'
+                      : 'text-[#9CA3AF] hover:bg-[#003366] hover:text-white'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -93,7 +93,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       </nav>
 
       {/* Add Lead Button */}
-      <div className="p-4 border-t border-[#334155]">
+      <div className="p-4 border-t border-[#003366]">
         <button
           onClick={onOpenAddModal}
           className="w-full bg-[#14b8a6] hover:bg-[#0d9488] text-white px-4 py-2.5 rounded-lg transition-all duration-150 ease-out flex items-center justify-center gap-2 text-sm font-medium"
