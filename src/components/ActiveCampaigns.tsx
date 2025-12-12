@@ -47,8 +47,8 @@ const ActiveCampaigns: React.FC = () => {
   if (error) {
     return (
       <div className="flex-1 bg-base p-6">
-        <div className="bg-panels border border-accent-red/20 rounded-2xl p-6 text-center">
-          <h3 className="text-lg font-semibold text-accent-red mb-2">Error Loading Campaigns</h3>
+        <div className="bg-panels border border-[#14b8a6]/20 rounded-2xl p-6 text-center">
+          <h3 className="text-lg font-semibold text-[#14b8a6] mb-2">Error Loading Campaigns</h3>
           <p className="text-muted">{error}</p>
         </div>
       </div>
@@ -67,8 +67,8 @@ const ActiveCampaigns: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <Target className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Target className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">{activeCampaignLeads.length}</p>
@@ -79,8 +79,8 @@ const ActiveCampaigns: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <Send className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Send className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">
@@ -93,8 +93,8 @@ const ActiveCampaigns: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <MessageSquare className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <MessageSquare className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">
@@ -107,8 +107,8 @@ const ActiveCampaigns: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <CheckCircle className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <CheckCircle className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">
@@ -146,7 +146,7 @@ const ActiveCampaigns: React.FC = () => {
                     >
                       <td className="p-4">
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 bg-accent-red rounded-full flex items-center justify-center">
+                          <div className="w-8 h-8 bg-[#14b8a6] rounded-full flex items-center justify-center">
                             <User className="h-4 w-4 text-white" />
                           </div>
                           <div>

@@ -55,9 +55,9 @@ const BookedMeetings: React.FC = () => {
   if (error) {
     return (
       <div className="flex-1 bg-base p-6">
-        <div className="bg-panels border border-accent-red/20 rounded-2xl p-6 text-center">
-          <AlertCircle className="h-12 w-12 text-accent-red mx-auto mb-4" />
-          <h3 className="text-lg font-semibold text-accent-red mb-2">Error Loading Meetings Data</h3>
+        <div className="bg-panels border border-[#14b8a6]/20 rounded-2xl p-6 text-center">
+          <AlertCircle className="h-12 w-12 text-[#14b8a6] mx-auto mb-4" />
+          <h3 className="text-lg font-semibold text-[#14b8a6] mb-2">Error Loading Meetings Data</h3>
           <p className="text-muted">{error}</p>
         </div>
       </div>
@@ -76,8 +76,8 @@ const BookedMeetings: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <Calendar className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Calendar className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">{bookedMeetings.length}</p>
@@ -88,8 +88,8 @@ const BookedMeetings: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <Target className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Target className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">{conversionRate.toFixed(1)}%</p>
@@ -100,8 +100,8 @@ const BookedMeetings: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <DollarSign className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <DollarSign className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">${(bookedMeetings.length * 15000).toLocaleString()}</p>
@@ -112,8 +112,8 @@ const BookedMeetings: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-accent-red/10 rounded-2xl">
-                <Trophy className="h-6 w-6 text-accent-red" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Trophy className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">
@@ -130,7 +130,7 @@ const BookedMeetings: React.FC = () => {
           {/* Industry Performance */}
           <div className="bg-panels border border-white/10 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <Building className="h-5 w-5 text-accent-red" />
+              <Building className="h-5 w-5 text-[#14b8a6]" />
               <h2 className="text-lg font-semibold text-text">Performance by Industry</h2>
             </div>
             <div className="space-y-4">
@@ -143,7 +143,7 @@ const BookedMeetings: React.FC = () => {
                       <div className="flex items-center gap-3">
                         <div className="w-24 bg-white/10 rounded-full h-2">
                           <div 
-                            className="bg-accent-red h-2 rounded-full transition-all duration-1000"
+                            className="bg-[#14b8a6] h-2 rounded-full transition-all duration-1000"
                             style={{ width: `${(count / bookedMeetings.length) * 100}%` }}
                           />
                         </div>
@@ -160,7 +160,7 @@ const BookedMeetings: React.FC = () => {
           {/* Conversion Timeline */}
           <div className="bg-panels border border-white/10 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <TrendingUp className="h-5 w-5 text-accent-red" />
+              <TrendingUp className="h-5 w-5 text-[#14b8a6]" />
               <h2 className="text-lg font-semibold text-text">Recent Conversions</h2>
             </div>
             <div className="space-y-4">
@@ -185,7 +185,7 @@ const BookedMeetings: React.FC = () => {
         {/* Success Stories */}
         <div className="space-y-4">
           <div className="flex items-center gap-3 mb-4">
-            <CheckCircle2 className="h-5 w-5 text-accent-red" />
+            <CheckCircle2 className="h-5 w-5 text-[#14b8a6]" />
             <h2 className="text-lg font-semibold text-text">Successful Conversions</h2>
           </div>
 
