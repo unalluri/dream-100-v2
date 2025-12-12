@@ -5,9 +5,9 @@
 
 /* Custom CSS Variables for Theme */
 :root {
-  --base: #0f172a;
-  --panels: #1e293b;
-  --elevated: #334155;
+  --base: #001529;
+  --panels: #002447;
+  --elevated: #003366;
   --accent-red: #14b8a6;
   --accent-red-hover: #0d9488;
   --muted-gray: #9CA3AF;
@@ -30,14 +30,14 @@ body {
 
 /* Glassmorphism Effects */
 .glass-panel {
-  background: rgba(30, 41, 59, 0.8);
+  background: rgba(0, 36, 71, 0.8);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(229, 231, 235, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .glass-elevated {
-  background: rgba(51, 65, 85, 0.9);
+  background: rgba(0, 51, 102, 0.9);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(229, 231, 235, 0.15);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
@@ -132,7 +132,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(30, 41, 59, 0.95);
+  background: rgba(0, 36, 71, 0.95);
   backdrop-filter: blur(12px);
 }
 

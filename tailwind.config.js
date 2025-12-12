@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        base: '#0B0B0F',
-        panels: '#0F0F14',
-        elevated: '#121218',
+        base: '#001529',
+        panels: '#002447',
+        elevated: '#003366',
         accent: {
           red: '#E11D48',
           'red-hover': '#BE185D',
