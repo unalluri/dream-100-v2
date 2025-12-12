@@ -1100,7 +1100,7 @@ const LeadDetailModal: React.FC<LeadDetailModalProps> = ({
               type="button"
               onClick={handleDelete}
               disabled={deleting}
-              className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white rounded-xl transition-all hover:shadow-lg hover:shadow-red-600/25 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+              className="px-6 py-3 bg-[#14b8a6] hover:bg-[#0d9488] text-white rounded-xl transition-all hover:shadow-lg hover:shadow-[#14b8a6]/25 disabled:opacity-50 disabled:cursor-not-allowed font-medium"
             >
               {deleting ? 'Deleting...' : 'Delete Lead'}
             </button>

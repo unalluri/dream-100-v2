@@ -49,9 +49,9 @@ const RepliesEngagement: React.FC = () => {
   if (error) {
     return (
       <div className="flex-1 bg-[#0f172a] p-6">
-        <div className="bg-[#1e293b] border border-[#dc2626]/20 rounded-2xl p-6 text-center">
-          <AlertCircle className="h-12 w-12 text-[#dc2626] mx-auto mb-4" />
-          <h3 className="text-lg font-semibold text-[#dc2626] mb-2">Error Loading Engagement Data</h3>
+        <div className="bg-[#1e293b] border border-[#14b8a6]/20 rounded-2xl p-6 text-center">
+          <AlertCircle className="h-12 w-12 text-[#14b8a6] mx-auto mb-4" />
+          <h3 className="text-lg font-semibold text-[#14b8a6] mb-2">Error Loading Engagement Data</h3>
           <p className="text-[#9ca3af]">{error}</p>
         </div>
       </div>
