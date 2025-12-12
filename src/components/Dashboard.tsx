@@ -34,8 +34,8 @@ const Dashboard: React.FC = () => {
   if (error) {
     return (
       <div className="flex-1 bg-base p-6">
-        <div className="bg-panels border border-[#10b981]/20 rounded-2xl p-6 text-center">
-          <h3 className="text-lg font-semibold text-[#10b981] mb-2">Connection Error</h3>
+        <div className="bg-panels border border-[#14b8a6]/20 rounded-2xl p-6 text-center">
+          <h3 className="text-lg font-semibold text-[#14b8a6] mb-2">Connection Error</h3>
           <p className="text-muted mb-4">{error}</p>
         </div>
       </div>
@@ -84,8 +84,8 @@ const Dashboard: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center justify-between mb-4">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <Users className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Users className="h-6 w-6 text-[#14b8a6]" />
               </div>
             </div>
             <div>
@@ -96,8 +96,8 @@ const Dashboard: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center justify-between mb-4">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <Send className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Send className="h-6 w-6 text-[#14b8a6]" />
               </div>
             </div>
             <div>
@@ -108,8 +108,8 @@ const Dashboard: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center justify-between mb-4">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <MessageSquare className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <MessageSquare className="h-6 w-6 text-[#14b8a6]" />
               </div>
             </div>
             <div>
@@ -120,8 +120,8 @@ const Dashboard: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center justify-between mb-4">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <Calendar className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Calendar className="h-6 w-6 text-[#14b8a6]" />
               </div>
             </div>
             <div>
@@ -136,7 +136,7 @@ const Dashboard: React.FC = () => {
           {/* Recent Activity */}
           <div className="bg-panels border border-white/10 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <Activity className="h-5 w-5 text-[#10b981]" />
+              <Activity className="h-5 w-5 text-[#14b8a6]" />
               <h2 className="text-lg font-semibold text-text">Recent Activity</h2>
             </div>
             <div className="space-y-4">
@@ -178,7 +178,7 @@ const Dashboard: React.FC = () => {
           {/* Quick Stats */}
           <div className="bg-panels border border-white/10 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <TrendingUp className="h-5 w-5 text-[#10b981]" />
+              <TrendingUp className="h-5 w-5 text-[#14b8a6]" />
               <h2 className="text-lg font-semibold text-text">Quick Stats</h2>
             </div>
             <div className="space-y-4">

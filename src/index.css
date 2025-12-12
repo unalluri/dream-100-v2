@@ -5,9 +5,9 @@
 
 /* Custom CSS Variables for Theme */
 :root {
-  --base: #001529;
-  --panels: #002447;
-  --elevated: #003366;
+  --base: #0f1419;
+  --panels: #1a1f2e;
+  --elevated: #252b3b;
   --accent-red: #14b8a6;
   --accent-red-hover: #0d9488;
   --muted-gray: #9CA3AF;

@@ -55,9 +55,9 @@ const BookedMeetings: React.FC = () => {
   if (error) {
     return (
       <div className="flex-1 bg-base p-6">
-        <div className="bg-panels border border-[#10b981]/20 rounded-2xl p-6 text-center">
-          <AlertCircle className="h-12 w-12 text-[#10b981] mx-auto mb-4" />
-          <h3 className="text-lg font-semibold text-[#10b981] mb-2">Error Loading Meetings Data</h3>
+        <div className="bg-panels border border-[#14b8a6]/20 rounded-2xl p-6 text-center">
+          <AlertCircle className="h-12 w-12 text-[#14b8a6] mx-auto mb-4" />
+          <h3 className="text-lg font-semibold text-[#14b8a6] mb-2">Error Loading Meetings Data</h3>
           <p className="text-muted">{error}</p>
         </div>
       </div>
@@ -76,8 +76,8 @@ const BookedMeetings: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <Calendar className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Calendar className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">{bookedMeetings.length}</p>
@@ -88,8 +88,8 @@ const BookedMeetings: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <Target className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Target className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">{conversionRate.toFixed(1)}%</p>
@@ -100,8 +100,8 @@ const BookedMeetings: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <DollarSign className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <DollarSign className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">${(bookedMeetings.length * 15000).toLocaleString()}</p>
@@ -112,8 +112,8 @@ const BookedMeetings: React.FC = () => {
 
           <div className="bg-panels border border-white/10 rounded-2xl p-6 hover:bg-white/5 transition-all duration-150 ease-out">
             <div className="flex items-center gap-3">
-              <div className="p-3 bg-[#10b981]/10 rounded-2xl">
-                <Trophy className="h-6 w-6 text-[#10b981]" />
+              <div className="p-3 bg-[#14b8a6]/10 rounded-2xl">
+                <Trophy className="h-6 w-6 text-[#14b8a6]" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-text mb-1">
@@ -130,7 +130,7 @@ const BookedMeetings: React.FC = () => {
           {/* Industry Performance */}
           <div className="bg-panels border border-white/10 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <Building className="h-5 w-5 text-[#10b981]" />
+              <Building className="h-5 w-5 text-[#14b8a6]" />
               <h2 className="text-lg font-semibold text-text">Performance by Industry</h2>
             </div>
             <div className="space-y-4">
@@ -142,8 +142,8 @@ const BookedMeetings: React.FC = () => {
                       <span className="text-muted">{industry}</span>
                       <div className="flex items-center gap-3">
                         <div className="w-24 bg-white/10 rounded-full h-2">
-                          <div 
-                            className="bg-[#10b981] h-2 rounded-full transition-all duration-1000"
+                          <div
+                            className="bg-[#14b8a6] h-2 rounded-full transition-all duration-1000"
                             style={{ width: `${(count / bookedMeetings.length) * 100}%` }}
                           />
                         </div>
@@ -160,14 +160,14 @@ const BookedMeetings: React.FC = () => {
           {/* Conversion Timeline */}
           <div className="bg-panels border border-white/10 rounded-2xl p-6">
             <div className="flex items-center gap-3 mb-6">
-              <TrendingUp className="h-5 w-5 text-[#10b981]" />
+              <TrendingUp className="h-5 w-5 text-[#14b8a6]" />
               <h2 className="text-lg font-semibold text-text">Recent Conversions</h2>
             </div>
             <div className="space-y-4">
               {bookedMeetings.slice(0, 5).map((lead) => (
                 <div key={lead.process_id} className="flex items-center justify-between p-4 bg-elevated rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-150 ease-out">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-[#10b981] rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-[#14b8a6] rounded-full flex items-center justify-center">
                       <User className="h-4 w-4 text-text" />
                     </div>
                     <div>
@@ -175,7 +175,7 @@ const BookedMeetings: React.FC = () => {
                       <p className="text-muted text-sm">{lead.lead_company_name}</p>
                     </div>
                   </div>
-                  <CheckCircle2 className="h-5 w-5 text-[#10b981]" />
+                  <CheckCircle2 className="h-5 w-5 text-[#14b8a6]" />
                 </div>
               ))}
             </div>
@@ -185,7 +185,7 @@ const BookedMeetings: React.FC = () => {
         {/* Success Stories */}
         <div className="space-y-4">
           <div className="flex items-center gap-3 mb-4">
-            <CheckCircle2 className="h-5 w-5 text-[#10b981]" />
+            <CheckCircle2 className="h-5 w-5 text-[#14b8a6]" />
             <h2 className="text-lg font-semibold text-text">Successful Conversions</h2>
           </div>
 
@@ -220,14 +220,14 @@ const BookedMeetings: React.FC = () => {
                           <tr key={lead.process_id} className="hover:bg-elevated transition-all duration-150 ease-out">
                             <td className="p-4">
                               <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-[#10b981] rounded-full flex items-center justify-center">
+                                <div className="w-8 h-8 bg-[#14b8a6] rounded-full flex items-center justify-center">
                                   <User className="h-4 w-4 text-text" />
                                 </div>
                                 <div>
                                   <p className="font-medium text-text">{lead.lead_name}</p>
                                   <div className="flex items-center gap-1 mt-1">
-                                    <CheckCircle2 className="h-3 w-3 text-[#10b981]" />
-                                    <span className="text-xs text-[#10b981]">Meeting Booked</span>
+                                    <CheckCircle2 className="h-3 w-3 text-[#14b8a6]" />
+                                    <span className="text-xs text-[#14b8a6]">Meeting Booked</span>
                                   </div>
                                 </div>
                               </div>

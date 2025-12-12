@@ -78,8 +78,8 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
   if (error) {
     return (
       <div className="flex-1 bg-base p-6">
-        <div className="glass-panel rounded-2xl p-6 text-center border border-[#10b981]/20">
-          <h3 className="text-lg font-heading font-semibold text-[#10b981] mb-2">Error Loading Leads</h3>
+        <div className="glass-panel rounded-2xl p-6 text-center border border-[#14b8a6]/20">
+          <h3 className="text-lg font-heading font-semibold text-[#14b8a6] mb-2">Error Loading Leads</h3>
           <p className="text-muted">{error}</p>
         </div>
       </div>
@@ -87,13 +87,13 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
   }
 
   return (
-    <div className="flex-1 bg-[#0f172a]">
+    <div className="flex-1 bg-base">
       {/* Header */}
-      <div className="flex items-center justify-between p-6 border-b border-[#334155]">
-        <h1 className="text-2xl font-semibold text-white">All Leads</h1>
+      <div className="flex items-center justify-between p-6 border-b border-white/10">
+        <h1 className="text-2xl font-semibold text-text">All Leads</h1>
         <button
           onClick={onOpenAddModal}
-          className="flex items-center gap-2 px-4 py-2 bg-[#10b981] hover:bg-[#0d9488] text-white rounded-lg transition-all duration-150 ease-out font-medium text-sm"
+          className="flex items-center gap-2 px-4 py-2 bg-[#14b8a6] hover:bg-[#0d9488] text-white rounded-lg transition-all duration-150 ease-out font-medium text-sm"
         >
           <Plus className="h-4 w-4" />
           Add Lead
@@ -101,54 +101,54 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
       </div>
 
       {/* Search */}
-      <div className="p-6 border-b border-[#334155]">
+      <div className="p-6 border-b border-white/10">
         <div className="relative">
-          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-4 w-4 text-[#9CA3AF]" />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted" />
           <input
             type="text"
             placeholder="Search leads and companies..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-12 pr-4 py-3 bg-[#1e293b] border border-[#334155] rounded-lg text-white placeholder-[#9CA3AF] focus:outline-none focus:border-[#10b981] transition-all duration-150 ease-out"
+            className="w-full pl-12 pr-4 py-3 bg-panels border border-white/10 rounded-lg text-text placeholder-muted focus:outline-none focus:border-[#14b8a6] transition-all duration-150 ease-out"
           />
         </div>
       </div>
 
       {/* Table */}
-      <div className="overflow-x-auto bg-[#0f172a]">
+      <div className="overflow-x-auto bg-base">
         <table className="w-full">
-          <thead className="sticky top-0 bg-[#0f172a] border-b border-[#334155]">
+          <thead className="sticky top-0 bg-base border-b border-white/10">
             <tr>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Name</th>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Company</th>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Industry</th>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Job Title</th>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Status</th>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Updated</th>
-              <th className="text-left p-4 text-[#9CA3AF] font-medium text-sm">Actions</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Name</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Company</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Industry</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Job Title</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Status</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Updated</th>
+              <th className="text-left p-4 text-muted font-medium text-sm">Actions</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#334155]">
+          <tbody className="divide-y divide-white/10">
             {filteredLeads.map((lead) => (
               <tr
                 key={lead.process_id}
-                className="hover:bg-[#1e293b] transition-all duration-150 ease-out cursor-pointer group"
+                className="hover:bg-panels transition-all duration-150 ease-out cursor-pointer group"
                 onClick={() => {
                   setSelectedLead(lead);
                   setShowDetailModal(true);
                 }}
               >
                 <td className="p-4">
-                  <div className="text-white font-medium">{lead.lead_name}</div>
+                  <div className="text-text font-medium">{lead.lead_name}</div>
                 </td>
                 <td className="p-4">
-                  <div className="text-[#9CA3AF]">{lead.lead_company_name || '-'}</div>
+                  <div className="text-muted">{lead.lead_company_name || '-'}</div>
                 </td>
                 <td className="p-4">
-                  <div className="text-[#9CA3AF]">{lead.industry || '-'}</div>
+                  <div className="text-muted">{lead.industry || '-'}</div>
                 </td>
                 <td className="p-4">
-                  <div className="text-[#9CA3AF]">{lead.job_title || '-'}</div>
+                  <div className="text-muted">{lead.job_title || '-'}</div>
                 </td>
                 <td className="p-4">
                   <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusBadge(getLeadStatus(lead))}`}>
@@ -156,7 +156,7 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
                   </span>
                 </td>
                 <td className="p-4">
-                  <div className="text-[#9CA3AF] text-sm">
+                  <div className="text-muted text-sm">
                     {lead.updated_at ? new Date(lead.updated_at).toLocaleDateString() : 'about 3 hours ago'}
                   </div>
                 </td>
@@ -166,18 +166,18 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
                       href={lead.lead_linkedin_url || '#'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-1.5 text-[#9CA3AF] hover:text-white hover:bg-[#334155] rounded transition-all duration-100 ease-out opacity-0 group-hover:opacity-100"
+                      className="p-1.5 text-muted hover:text-text hover:bg-elevated rounded transition-all duration-100 ease-out opacity-0 group-hover:opacity-100"
                       title="LinkedIn Profile"
                     >
                       <Linkedin className="h-4 w-4" />
                     </a>
-                    <button 
+                    <button
                       onClick={(e) => {
                         e.stopPropagation();
                         setSelectedLead(lead);
                         setShowDetailModal(true);
                       }}
-                      className="p-1.5 text-[#9CA3AF] hover:text-white hover:bg-[#334155] rounded transition-all duration-100 ease-out opacity-0 group-hover:opacity-100"
+                      className="p-1.5 text-muted hover:text-text hover:bg-elevated rounded transition-all duration-100 ease-out opacity-0 group-hover:opacity-100"
                       title="Edit Lead"
                     >
                       <Edit className="h-4 w-4" />
@@ -192,8 +192,8 @@ const AllLeads: React.FC<AllLeadsProps> = ({ onOpenAddModal }) => {
 
       {filteredLeads.length === 0 && !loading && (
         <div className="text-center py-12 animate-fade-in">
-          <Users className="h-12 w-12 text-[#9CA3AF] mx-auto mb-4" />
-          <p className="text-[#9CA3AF]">No leads found matching your criteria</p>
+          <Users className="h-12 w-12 text-muted mx-auto mb-4" />
+          <p className="text-muted">No leads found matching your criteria</p>
         </div>
       )}
 
